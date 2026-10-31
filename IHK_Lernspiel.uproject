@@ -1,0 +1,34 @@
+{
+    "FileVersion": 3,
+    "EngineAssociation": "5.4",
+    "Category": "",
+    "Description": "IHK Lernspiel - Zielvereinbarungsfragen Trainer für Beratung 10.11.2026",
+    "Modules": [
+        {
+            "Name": "IHK_Lernspiel",
+            "Type": "Runtime",
+            "LoadingPhase": "Default",
+            "AdditionalDependencies": [
+                "UMG",
+                "DataTable",
+                "Json",
+                "Http"
+            ]
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "WebBrowser",
+            "Enabled": true,
+            "SupportedTargetPlatforms": ["WebGL"]
+        }
+    ],
+    "TargetPlatforms": [
+        "WebGL",
+        "Windows",
+        "Linux",
+        "Mac"
+    ],
+    "PreBuildSteps": [],
+    "PostBuildSteps": []
+}

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/home/shadowmaker/UE5_IHK_Lernspiel/Source/IHK_Lernspiel/IHK_Lernspiel.Build.cs",
+		"/home/shadowmaker/UE5_IHK_Lernspiel/Source/IHK_Lernspiel.Target.cs",
+		"/home/shadowmaker/UE5_IHK_Lernspiel/Source/IHK_LernspielEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
