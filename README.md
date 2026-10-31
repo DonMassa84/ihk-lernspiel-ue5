@@ -101,3 +101,64 @@ MIT — frei für Lernzwecke, IHK-Vorbereitung, FRS-Projekt.
 ---
 
 **Stand**: 2026-10-14 | **UE Version**: 5.4+ | **Ziel**: WebGL / Desktop
+## Build-Anleitung (Windows)
+
+### Voraussetzungen
+- Unreal Engine 5.4.4 (Epic Games Launcher)
+- Visual Studio 2022 (mit C++ Desktop Development Workload)
+- Windows 10/11 (64-bit)
+
+### Build-Schritte
+1. UE 5.4.4 über den Epic Games Launcher installieren
+2. Repository klonen:
+   ```
+   git clone https://github.com/DonMassa84/ihk-lernspiel-ue5.git
+   ```
+3. `IHK_Lernspiel.uproject` doppelklicken → UE Editor öffnet sich
+4. Editor kompiliert automatisch die C++ Module
+5. Play drücken zum Testen
+
+### Packaging (Windows)
+- Im UE Editor: `File > Package Project > Windows (64-bit)`
+- Output: `Saved/StagedBuilds/Windows/`
+
+### Packaging (WebGL)
+- Im UE Editor: `File > Package Project > HTML5`
+- Output in `Build/WebGL/` deployen (Netlify/GitHub Pages)
+
+### Projektstruktur
+```
+UE5_IHK_Lernspiel/
+├── Config/                 # Engine & Game Konfiguration
+├── Content/                # Blueprints, Daten, UI
+│   ├── Blueprints/         # GameMode, SaveGame (Doku)
+│   ├── Data/               # DataTables (Fragen)
+│   └── UI/                 # Widget-Hierarchien
+├── Source/                 # C++ Code
+│   ├── IHK_Lernspiel/      # Hauptmodul
+│   │   ├── Public/         # Header-Dateien
+│   │   └── Private/        # Implementierungen
+│   └── IHK_LernspielEditor/ # Editor-Modul
+├── build_webgl.sh          # WebGL Build Script
+├── import_datatable.py     # DataTable Import Script
+├── IHK_Lernspiel.uproject  # Projekt-Datei
+└── README.md
+```
+
+### C++ Klassen
+| Klasse | Datei | Beschreibung |
+|--------|-------|-------------|
+| `AIHK_LernspielGameMode` | GameMode.h/cpp | Hauptspiel-Logik, Fragen-Verwaltung, Scoring |
+| `UIHK_LernspielSaveGame` | SaveGame.h/cpp | SaveGame mit SM-2 Spaced Repetition |
+| `FIHK_LernspielModule` | Module.h/cpp | Unreal Module Definition |
+
+### Fragen-Daten
+Die 11 Zielvereinbarungsfragen liegen in `Content/Data/DT_Questions.csv` und werden als DataTable importiert.
+
+### Status
+- **C++ Code**: ✅ Kompilierbar (UE 5.4+)
+- **Blueprints**: 📝 Dokumentiert (Content/Blueprints/*.md)
+- **UI Widgets**: 📝 Dokumentiert (Content/UI/WBP_Structure.md)
+- **Build (Linux)**: ❌ Engine unvollständig (fehlende Linux-Toolchain)
+- **Build (Windows)**: ⏳ Ausstehend (Windows-Maschine mit UE 5.4.4 nötig)
+- **Build (WebGL)**: ⏳ Ausstehend
