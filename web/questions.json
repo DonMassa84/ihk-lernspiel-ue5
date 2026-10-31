@@ -1,0 +1,236 @@
+[
+  {
+    "id": "F1",
+    "priority": 1,
+    "category": "Scope",
+    "question": "Zu meinem Verständnis: Das Projekt umfasst die Planung und Steuerung eines begrenzten Archivpiloten — nicht die vollständige Migration des FRS-Gesamtarchivs. Ist diese Abgrenzung so korrekt? Welche Nicht-Ziele soll ich ausdrücklich in der Zielvereinbarung aufnehmen?",
+    "modelAnswer": "Abgrenzung: Pilot, keine Gesamtmigration. Nicht-Ziele: keine vollständige Bestandsmigration, kein Austausch aller produktiven Sendesysteme, keine unautorisierten Änderungen an Produktivsystemen, keine rechtswidrige Veröffentlichung.",
+    "keywords": [
+      "Pilot",
+      "Nicht-Ziele",
+      "Abgrenzung",
+      "Scope"
+    ],
+    "difficulty": 1,
+    "options": [
+      "Abgrenzung: Pilot, keine Gesamtmigration. Nicht-Ziele: keine vollständige Bestan...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F2",
+    "priority": 1,
+    "category": "Type",
+    "question": "Liegt der Schwerpunkt auf der Projektleitung eines IT-Projekts mit technischem Pilot, oder auf einer Machbarkeitsstudie mit Konzept und Empfehlung? Meine Eigenleistung umfasst beides — Projektleitung und dokumentierte Pilotteile. Wie soll das Verhältnis in der Zielvereinbarung beschrieben werden?",
+    "modelAnswer": "Beides: Projektleitung (§12: Projekte einrichten, durchführen, auflösen; Projekte leiten) + dokumentierter technischer Pilot. Verhältnis: Leitung im Mittelpunkt, Implementierung als Teilprojekt.",
+    "keywords": [
+      "Projektleitung",
+      "Machbarkeitsstudie",
+      "IT-Projekt",
+      "Eigenleistung"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Beides: Projektleitung (§12: Projekte einrichten, durchführen, auflösen; Projekt...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F3",
+    "priority": 1,
+    "category": "Documentation",
+    "question": "Welche Art von Dokumentation wird erwartet — Bericht, Mappe, digitale Ablage? Gibt es Vorgaben zu Umfang, Gliederung oder Seitenumfang? Soll die Dokumentation den Projektverlauf darstellen und analytisch bewerten (gemäß § 12)?",
+    "modelAnswer": "Erwartet: Projektdokumentation (Verlauf + analytische Bewertung). Handreichung: 8-10h oder max 20% der Gesamtzeit. Bei 70h = 12h (17%) — im Plan enthalten. Ausschuss muss bestätigen.",
+    "keywords": [
+      "Dokumentation",
+      "Umfang",
+      "Gliederung",
+      "§12",
+      "Handreichung"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Erwartet: Projektdokumentation (Verlauf + analytische Bewertung). Handreichung: ...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F4",
+    "priority": 1,
+    "category": "Timeline",
+    "question": "Wann ist der verbindliche Abgabetermin? Gibt es eine Mindestdauer für die Projektphase? Zwischen Beratung und Abgabe dürfen nach Verordnung maximal 12 Monate liegen — mein Plan sieht den Abschluss innerhalb dieses Rahmens vor.",
+    "modelAnswer": "Abgabetermin Teil der Zielvereinbarung (§4 VO). Ohne festen Termin keine belastbare Planung. 70h-Verteilung hängt vom Zeitrahmen ab. Max 12 Monate zwischen Beratung und Abgabe.",
+    "keywords": [
+      "Abgabetermin",
+      "Zielvereinbarung",
+      "12 Monate",
+      "Zeitrahmen"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Abgabetermin Teil der Zielvereinbarung (§4 VO). Ohne festen Termin keine belastb...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F5",
+    "priority": 1,
+    "category": "Focus",
+    "question": "Welche Schwerpunkte soll die Projektarbeit aus Ihrer Sicht setzen? Soll ich besonderes Gewicht auf Ist-Analyse, Alternativenbewertung, Wirtschaftlichkeit oder die technische Pilotumsetzung legen?",
+    "modelAnswer": "Ausschuss kann Schwerpunkte setzen (§12/§4). Wer das vorher weiß, kann 70h entsprechend priorisieren.",
+    "keywords": [
+      "Schwerpunkte",
+      "Priorisierung",
+      "70h",
+      "Ausschuss"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Ausschuss kann Schwerpunkte setzen (§12/§4). Wer das vorher weiß, kann 70h entsp...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F6",
+    "priority": 2,
+    "category": "Formal",
+    "question": "Das mir am 01.10. übermittelte Merkblatt enthält eine Terminübersicht mit Daten aus 2025. Gilt diese Fassung für meinen Durchgang weiterhin, oder liegt eine aktualisierte Fassung für 2026 vor? Insbesondere die formalen Dokumentationsvorgaben möchte ich auf dem richtigen Stand haben.",
+    "modelAnswer": "Merkblatt wurde mit Nachreichungspaket gesendet. Veraltete Fassung könnte falsche Formalvorgaben enthalten. Nicht ungeprüft als verbindlich darstellen.",
+    "keywords": [
+      "Merkblatt",
+      "2025",
+      "2026",
+      "Formalvorgaben"
+    ],
+    "difficulty": 1,
+    "options": [
+      "Merkblatt wurde mit Nachreichungspaket gesendet. Veraltete Fassung könnte falsch...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F7",
+    "priority": 2,
+    "category": "Formal",
+    "question": "Ihre Einladung nennt die Prüfungsnummer 130465. In meinen Unterlagen taucht daneben die Nummer 615951 auf. Sind beide Bezüge korrekt — die eine als Prüfungs-, die andere als Teilnehmerkennung — oder soll ich eine davon korrigieren?",
+    "modelAnswer": "130465 = Prüfungsnummer (Einladung). 615951 = Prüflings-ID / Teilnehmerbezug. Beide im selben Schreiben. Keine stillschweigende Gleichsetzung.",
+    "keywords": [
+      "Prüfungsnummer",
+      "Teilnehmerkennung",
+      "130465",
+      "615951"
+    ],
+    "difficulty": 1,
+    "options": [
+      "130465 = Prüfungsnummer (Einladung). 615951 = Prüflings-ID / Teilnehmerbezug. Be...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F8",
+    "priority": 2,
+    "category": "DataAccess",
+    "question": "Für die Ist-Analyse benötige ich Zugang zu den FRS-Datenstrukturen (Drupal, Dateisystem, Metadaten). Wer ist die entscheidungsberechtigte Person auf FRS-Seite für diese Freigaben? Und ab wann darf ich mit der Ist-Analyse beginnen — vor oder erst nach der Zielvereinbarung?",
+    "modelAnswer": "Ohne Datenzugang keine Ist-Analyse. 10h Initiierungsphase setzen realen Zugang voraus. Wer freigibt, muss vorher geklärt sein.",
+    "keywords": [
+      "Datenzugang",
+      "Ist-Analyse",
+      "FRS",
+      "Freigabe",
+      "Entscheidungsberechtigt"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Ohne Datenzugang keine Ist-Analyse. 10h Initiierungsphase setzen realen Zugang v...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F9",
+    "priority": 3,
+    "category": "Coach",
+    "question": "Ich habe Roman Kalex als betriebliche IT-Ansprechperson und Carsten Vordermeier als externen Coach benannt. Muss die betriebliche Rolle von FRS-Seite schriftlich bestätigt werden, oder genügt die Benennung im Antrag?",
+    "modelAnswer": "Keine generelle Pflicht in allgemeinen Bestimmungen ersichtlich. Aber: IHK kann eigene Formblätter/Nachreichungen fordern. Coach-Rolle ersetzt nicht FRS-Datenfreigabe oder Beauftragung.",
+    "keywords": [
+      "Coach",
+      "Roman Kalex",
+      "Carsten Vordermeier",
+      "Schriftlich",
+      "Formblätter"
+    ],
+    "difficulty": 1,
+    "options": [
+      "Keine generelle Pflicht in allgemeinen Bestimmungen ersichtlich. Aber: IHK kann ...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F10",
+    "priority": 3,
+    "category": "ChangeControl",
+    "question": "Was gilt, wenn sich Projektumfang oder Anforderungen im Projektverlauf ändern? Muss jede Änderung mit dem Ausschuss abgestimmt werden, oder gibt es eine Untergrenze für anmeldepflichtige Abweichungen?",
+    "modelAnswer": "Scope Creep ist typisches Risiko. Geklärtes Änderungsverfahren schützt vor Überraschungen bei der Abnahme.",
+    "keywords": [
+      "Änderungsverfahren",
+      "Scope Creep",
+      "Abweichungen",
+      "Abnahme"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Scope Creep ist typisches Risiko. Geklärtes Änderungsverfahren schützt vor Überr...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "F11",
+    "priority": 3,
+    "category": "Evaluation",
+    "question": "Nach welchen Kriterien wird die Projektarbeit bewertet? Gibt es eine Bewertungsrubrik, die ich vorab einsehen könnte, um die Dokumentation entsprechend auszurichten?",
+    "modelAnswer": "Handreichungen nennen Argumentationslogik, Problemlösung, eigene gedankliche Leistung, Aufbau. Konkrete Rubrik wäre hilfreich.",
+    "keywords": [
+      "Bewertung",
+      "Kriterien",
+      "Rubrik",
+      "Argumentationslogik"
+    ],
+    "difficulty": 2,
+    "options": [
+      "Handreichungen nennen Argumentationslogik, Problemlösung, eigene gedankliche Lei...",
+      "Alternative A",
+      "Alternative B",
+      "Alternative C"
+    ],
+    "correctIndex": 0
+  }
+]

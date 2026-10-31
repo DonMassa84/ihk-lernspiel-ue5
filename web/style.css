@@ -1,0 +1,181 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #00d4ff;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 1rem;
+}
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+h2 { margin-bottom: 20px; color: #fff; }
+
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: rgba(255,255,255,0.1);
+    color: #e0e0e0;
+}
+
+.btn:hover { background: rgba(255,255,255,0.2); transform: translateY(-1px); }
+.btn.primary { background: #00d4ff; color: #000; font-weight: bold; }
+.btn.primary:hover { background: #00b8e6; }
+.btn.secondary { background: rgba(255,255,255,0.05); }
+.btn.danger { background: #ff4757; color: #fff; }
+
+.progress-bar {
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00d4ff, #00ff88);
+    transition: width 0.3s;
+    width: 0%;
+}
+
+.progress-text {
+    text-align: center;
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.question-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.category-badge, .priority-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.category-badge { background: #00d4ff22; color: #00d4ff; border: 1px solid #00d4ff44; }
+.priority-badge { background: #ff6b6b22; color: #ff6b6b; border: 1px solid #ff6b6b44; }
+
+.question-card h2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-btn {
+    padding: 12px 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    color: #e0e0e0;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.option-btn:hover:not(:disabled) { background: rgba(255,255,255,0.12); border-color: #00d4ff; }
+.option-btn:disabled { cursor: default; opacity: 0.7; }
+.option-btn.correct { background: #00ff8822; border-color: #00ff88; color: #00ff88; }
+.option-btn.wrong { background: #ff475722; border-color: #ff4757; color: #ff4757; }
+
+.feedback {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feedback-correct strong { color: #00ff88; }
+.feedback-wrong strong { color: #ff4757; }
+.feedback p { margin-top: 8px; font-size: 0.9rem; line-height: 1.4; }
+
+.result-card {
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+
+.result-score {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+.result-card p { margin: 8px 0; color: #aaa; }
+
+.stats-detail table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.stats-detail th, .stats-detail td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.stats-detail th { color: #00d4ff; }
+.stats-detail ul { margin: 10px 0; padding-left: 20px; }
+.stats-detail li { margin: 5px 0; color: #aaa; }

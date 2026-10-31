@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHK Lernspiel — Zielvereinbarungsfragen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IHK Lernspiel</h1>
+            <p class="subtitle">Zielvereinbarungsfragen Trainer — F1 bis F11</p>
+        </header>
+
+        <div id="main-menu" class="screen active">
+            <h2>Hauptmenü</h2>
+            <div class="stats-bar">
+                <span>Sessions: <strong id="stat-sessions">0</strong></span>
+                <span>Beste Punktzahl: <strong id="stat-best">0%</strong></span>
+                <span>Durchschnitt: <strong id="stat-avg">0%</strong></span>
+            </div>
+            <div class="button-group">
+                <button class="btn primary" onclick="startGame('all')">Alle Fragen (11)</button>
+                <button class="btn" onclick="startGame(1)">Priorität 1 — Kritisch (5)</button>
+                <button class="btn" onclick="startGame(2)">Priorität 2 — Wichtig (4)</button>
+                <button class="btn" onclick="startGame(3)">Priorität 3 — Nice to Have (2)</button>
+                <button class="btn secondary" onclick="showStats()">Statistik</button>
+                <button class="btn danger" onclick="resetProgress()">Fortschritt zurücksetzen</button>
+            </div>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="progress-text">
+                Frage <span id="q-index">1</span> von <span id="q-total">11</span>
+                | Punkte: <span id="q-score">0</span>
+            </div>
+            <div class="question-card">
+                <div class="category-badge" id="q-category">Scope</div>
+                <div class="priority-badge" id="q-priority">Priorität 1</div>
+                <h2 id="q-text">Frage</h2>
+                <div id="q-options" class="options"></div>
+            </div>
+            <div id="feedback" class="feedback hidden"></div>
+            <div class="button-group">
+                <button class="btn secondary" onclick="skipQuestion()">Überspringen</button>
+                <button class="btn secondary" onclick="returnToMenu()">Zurück zum Menü</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <h2>Ergebnis</h2>
+            <div class="result-card">
+                <div class="result-score" id="result-percentage">0%</div>
+                <p><span id="result-correct">0</span> von <span id="result-total">0</span> Fragen richtig</p>
+                <p id="result-message">Nachricht</p>
+            </div>
+            <div class="button-group">
+                <button class="btn primary" onclick="startGame('all')">Nochmal spielen</button>
+                <button class="btn" onclick="returnToMenu()">Zurück zum Menü</button>
+            </div>
+        </div>
+
+        <div id="stats-screen" class="screen">
+            <h2>Statistik</h2>
+            <div id="stats-content"></div>
+            <div class="button-group">
+                <button class="btn" onclick="returnToMenu()">Zurück zum Menü</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
