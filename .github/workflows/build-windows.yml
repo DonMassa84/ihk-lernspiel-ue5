@@ -1,0 +1,48 @@
+name: Build IHK Lernspiel (Windows)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Unreal Engine 5.4
+        run: |
+          # Download UE5.4.4 via Epic Games (requires Epic account)
+          # Alternative: Use pre-installed UE on self-hosted runner
+          echo "UE5.4 setup required on self-hosted runner"
+          echo "For cloud runners, use: https://github.com/marketplace/actions/setup-unreal-engine"
+        shell: pwsh
+
+      - name: Build C++ (UnrealBuildTool)
+        run: |
+          $UE_ROOT = "C:\Program Files\Epic Games\UE_5.4"
+          $UBT = "$UE_ROOT\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe"
+          $PROJECT = "${{ github.workspace }}\IHK_Lernspiel.uproject"
+          & $UBT IHK_LernspielEditor Win64 Development -Project=$PROJECT -WaitMutex -NoHotReload
+        shell: pwsh
+
+      - name: Package (Windows)
+        run: |
+          $UE_ROOT = "C:\Program Files\Epic Games\UE_5.4"
+          $UAT = "$UE_ROOT\Engine\Build\BatchFiles\RunUAT.bat"
+          $PROJECT = "${{ github.workspace }}\IHK_Lernspiel.uproject"
+          & $UAT BuildCookRun -project=$PROJECT -platform=Win64 -clientconfig=Development -build -cook -stage -pak -archive -archivedirectory="${{ github.workspace }}\Build\Windows"
+        shell: pwsh
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: IHK_Lernspiel-Windows
+          path: Build/Windows/
+          retention-days: 30
